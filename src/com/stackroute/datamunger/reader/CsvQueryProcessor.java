@@ -86,7 +86,7 @@ public class CsvQueryProcessor extends QueryProcessingEngine {
 			else if(value.matches("[+-]?[0-9]+[.][0-9]+")) {
 				dataType = "java.lang.Double";
 			}// checking for string
-			else if(value.matches("[a-zA-Z0-9\s]+")) {
+			else if(value.matches("[a-zA-Z0-9\\s]+")) {
 				dataType = "java.lang.String";
 			}// checking for date format dd/mm/yyyy
 			else if(value.matches("([0-2][0-9]|(3)[0-1])[/]((0)[1-9]|(1)[1-2])[/]([0-9]{4})") ||
